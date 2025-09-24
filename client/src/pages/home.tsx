@@ -59,7 +59,7 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-xl sm:text-2xl font-bold text-foreground">LocalizeGuy</h1>
-                <p className="text-xs sm:text-sm text-muted-foreground">Celebrate global reach 🌍🎉</p>
+                <p className="text-xs sm:text-sm text-muted-foreground">Celebrate global reach with LocalizeGuy 🌍🎉</p>
               </div>
             </div>
           </div>
