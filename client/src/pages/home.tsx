@@ -3,18 +3,8 @@ import InputSection from "@/components/input-section";
 import OutputSection from "@/components/output-section";
 import CulturesPanel from "@/components/cultures-panel";
 import { generateTranslations } from "@/lib/gemini";
+import { DEFAULT_CULTURES } from "@/lib/cultures";
 import type { Translation, Culture } from "@shared/schema";
-
-const DEFAULT_CULTURES: Culture[] = [
-  { code: "en-GB", name: "English (UK)", flag: "🇬🇧" },
-  { code: "fr-CA", name: "French (Canada)", flag: "🇨🇦" },
-  { code: "es-ES", name: "Spanish (Spain)", flag: "🇪🇸" },
-  { code: "de-DE", name: "German (Germany)", flag: "🇩🇪" },
-  { code: "ja-JP", name: "Japanese (Japan)", flag: "🇯🇵" },
-  { code: "ko-KR", name: "Korean (South Korea)", flag: "🇰🇷" },
-  { code: "zh-CN", name: "Chinese (China)", flag: "🇨🇳" },
-  { code: "pt-BR", name: "Portuguese (Brazil)", flag: "🇧🇷" },
-];
 
 export default function Home() {
   const [cultures, setCultures] = useState<Culture[]>(DEFAULT_CULTURES);
@@ -69,11 +59,8 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-foreground">LocalizeGuy</h1>
-                <p className="text-sm text-muted-foreground">AI-Powered Localization Tool</p>
+                <p className="text-sm text-muted-foreground">Celebrate global reach with LocalizeGuy 🌍🎉</p>
               </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="text-sm text-muted-foreground">v1.0.0</span>
             </div>
           </div>
         </div>
