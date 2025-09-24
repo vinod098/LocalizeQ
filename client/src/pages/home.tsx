@@ -58,8 +58,8 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-foreground">LocalizeGuy</h1>
-                <p className="text-sm text-muted-foreground">Celebrate global reach with LocalizeGuy 🌍🎉</p>
+                <h1 className="text-xl sm:text-2xl font-bold text-foreground">LocalizeGuy</h1>
+                <p className="text-xs sm:text-sm text-muted-foreground">Celebrate global reach 🌍🎉</p>
               </div>
             </div>
           </div>
@@ -94,16 +94,15 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border bg-card mt-12">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            {/* Left side - Powered by */}
+            <div className="flex items-center">
               <p className="text-sm text-muted-foreground">Powered by Gemini AI</p>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-accent rounded-full"></div>
-                <span className="text-xs text-muted-foreground">API Connected</span>
-              </div>
             </div>
+            
+            {/* Right side - Made with love */}
             <div className="text-sm text-muted-foreground">
-              Made with ❤️ for developers
+              Made with <span className="text-red-500">❤️</span> for developers
             </div>
           </div>
         </div>

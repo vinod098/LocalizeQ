@@ -98,31 +98,36 @@ export default function OutputSection({ translation, isLoading, error }: OutputS
   }
 
   return (
-    <div className="bg-card border border-border rounded-lg shadow-sm p-6">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-semibold text-foreground">Generated YAML Output</h2>
-        <div className="flex items-center space-x-2">
-          <Button
-            data-testid="button-copy"
-            variant="outline"
-            size="sm"
-            className="flex items-center space-x-2 px-3 py-1.5 text-sm font-medium text-muted-foreground hover:text-foreground border border-border rounded-md hover:border-primary/50 transition-all duration-200"
-            onClick={handleCopy}
-            disabled={!yamlContent}
-          >
-            <Copy className="w-4 h-4" />
-            <span>Copy</span>
-          </Button>
-          <Button
-            data-testid="button-download"
-            size="sm"
-            className="flex items-center space-x-2 px-3 py-1.5 text-sm font-medium text-accent-foreground bg-accent hover:bg-accent/90 rounded-md transition-all duration-200"
-            onClick={handleDownload}
-            disabled={!yamlContent}
-          >
-            <Download className="w-4 h-4" />
-            <span>Download YAML</span>
-          </Button>
+    <div className="bg-card border border-border rounded-lg shadow-sm p-4 sm:p-6">
+      {/* Header - Desktop: buttons on right, Mobile: buttons below */}
+      <div className="mb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <h2 className="text-lg font-semibold text-foreground">Generated YAML Output</h2>
+          
+          {/* Desktop buttons - hidden on mobile */}
+          <div className="hidden sm:flex items-center space-x-2">
+            <Button
+              data-testid="button-copy"
+              variant="outline"
+              size="sm"
+              className="flex items-center space-x-2 px-3 py-1.5 text-sm font-medium text-muted-foreground hover:text-foreground border border-border rounded-md hover:border-primary/50 transition-all duration-200"
+              onClick={handleCopy}
+              disabled={!yamlContent}
+            >
+              <Copy className="w-4 h-4" />
+              <span>Copy</span>
+            </Button>
+            <Button
+              data-testid="button-download"
+              size="sm"
+              className="flex items-center space-x-2 px-3 py-1.5 text-sm font-medium text-accent-foreground bg-accent hover:bg-accent/90 rounded-md transition-all duration-200"
+              onClick={handleDownload}
+              disabled={!yamlContent}
+            >
+              <Download className="w-4 h-4" />
+              <span>Download YAML</span>
+            </Button>
+          </div>
         </div>
       </div>
       
@@ -150,6 +155,31 @@ export default function OutputSection({ translation, isLoading, error }: OutputS
             </div>
           )}
         </div>
+      </div>
+
+      {/* Mobile buttons - shown only on mobile, below the YAML output */}
+      <div className="flex sm:hidden items-center justify-center space-x-2 mt-4">
+        <Button
+          data-testid="button-copy-mobile"
+          variant="outline"
+          size="sm"
+          className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground border border-border rounded-md hover:border-primary/50 transition-all duration-200"
+          onClick={handleCopy}
+          disabled={!yamlContent}
+        >
+          <Copy className="w-4 h-4" />
+          <span>Copy</span>
+        </Button>
+        <Button
+          data-testid="button-download-mobile"
+          size="sm"
+          className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-accent-foreground bg-accent hover:bg-accent/90 rounded-md transition-all duration-200"
+          onClick={handleDownload}
+          disabled={!yamlContent}
+        >
+          <Download className="w-4 h-4" />
+          <span>Download YAML</span>
+        </Button>
       </div>
     </div>
   );

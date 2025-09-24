@@ -236,7 +236,7 @@ export default function CulturesPanel({ cultures, onCulturesChange }: CulturesPa
   }, []);
 
   return (
-    <div className="bg-card border border-border rounded-lg shadow-sm p-6 sticky top-6">
+    <div className="bg-card border border-border rounded-lg shadow-sm p-4 sm:p-6 sticky top-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-semibold text-foreground">Supported Cultures</h2>
         <Button
@@ -251,7 +251,7 @@ export default function CulturesPanel({ cultures, onCulturesChange }: CulturesPa
       
       {/* Add New Culture */}
       <div className="mb-6 relative">
-        <div className="flex space-x-2">
+        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
           <div className="flex-1 relative">
             <Input
               ref={inputRef}
