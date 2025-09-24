@@ -1,0 +1,69 @@
+You are an expert full-stack React developer with focus on **modern, professional, and sleek UI/UX**. Build a **monolithic single-page React application** called LocalizeGuy with the following specifications:
+
+---
+
+### **Purpose**
+Allow users to input a text key/value with comment, get AI-generated translations for multiple cultures via Gemini API, and manage supported/requested cultures. Everything runs in the **frontend**—no backend needed.
+
+---
+
+### **Features**
+
+1. **Input Section**
+- Textarea where users paste:
+  value: <text>
+  comment: <context>
+- Button: "Generate Translations"
+- Responsive and modern design with placeholder text
+
+2. **Output Section**
+- Textarea / code editor that shows:
+  value: <text>
+  comment: <context>
+  cultures:
+    en-GB: <translation>
+    fr-CA: <translation>
+    ...
+- Editable inline
+- Buttons: "Copy" and "Download YAML"
+- Use **CodeMirror or Monaco Editor** for syntax highlighting and professional look
+
+3. **Supported Cultures Panel**
+- Display all supported cultures in a scrollable, clean panel
+- Input + Button to "Request New Culture" (adds it to the list)
+
+4. **Gemini API Integration**
+- Use Axios or fetch to call Gemini API
+- Input: value + comment + target cultures
+- Output: JSON of translations
+- Convert JSON → YAML using `js-yaml` and display in output editor
+
+5. **Design**
+- Sleek, minimal, professional, modern UI
+- Soft colors, rounded edges, subtle shadows
+- Fully responsive (desktop + tablet + mobile)
+- Clear font hierarchy (headings, inputs, buttons)
+- Hover/active states for buttons
+- Smooth spacing and padding
+
+6. **Extra UX**
+- Loading indicator while API is processing
+- Inline error messages if API fails
+- Copy to clipboard feedback
+- Download button triggers YAML file download
+
+---
+
+### **Tech Stack**
+- React.js (functional components + hooks)
+- Optional: Tailwind CSS or CSS-in-JS for modern styling
+- Axios for API calls
+- js-yaml for JSON → YAML conversion
+- CodeMirror / Monaco Editor for output textarea
+
+---
+
+### **Output**
+- Generate **full React project code** including `App.js`, `index.js`, `App.css` (or Tailwind styles), ready to run on local or Replit
+- Include **all UI features and Gemini API integration** as described above
+- Focus on **professional look, modern UI, and smooth user experience**
