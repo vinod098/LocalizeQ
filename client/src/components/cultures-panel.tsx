@@ -344,9 +344,9 @@ export default function CulturesPanel({ cultures, onCulturesChange }: CulturesPa
       {/* Culture Count */}
       <div className="mt-4 pt-4 border-t border-border">
         <div className="flex items-center justify-between text-sm">
-          <span className="text-muted-foreground">Total Cultures</span>
+          <span className="text-muted-foreground">Selected cultures</span>
           <span className="font-semibold text-foreground" data-testid="culture-count">
-            {cultures.length}
+            {cultures.length}/{SUPPORTED_CULTURES.length}
           </span>
         </div>
       </div>
