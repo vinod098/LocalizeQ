@@ -58,8 +58,8 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <h1 className="text-xl sm:text-2xl font-bold text-foreground">LocalizeGuy</h1>
-                <p className="text-xs sm:text-sm text-muted-foreground">Celebrate global reach with LocalizeGuy 🌍🎉</p>
+                <h1 className="text-xl sm:text-2xl font-bold text-foreground">LocalizeQ</h1>
+                <p className="text-xs sm:text-sm text-muted-foreground">Celebrate global reach with LocalizeQ 🌍🎉</p>
               </div>
             </div>
           </div>
