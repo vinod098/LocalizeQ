@@ -19,7 +19,6 @@ export default defineConfig({
         ]
       : []),
   ],
-  base: '/LocalizeQ/',
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
