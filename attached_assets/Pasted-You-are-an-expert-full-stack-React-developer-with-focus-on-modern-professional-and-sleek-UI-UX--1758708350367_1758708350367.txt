@@ -1,4 +1,4 @@
-You are an expert full-stack React developer with focus on **modern, professional, and sleek UI/UX**. Build a **monolithic single-page React application** called LocalizeGuy with the following specifications:
+You are an expert full-stack React developer with focus on **modern, professional, and sleek UI/UX**. Build a **monolithic single-page React application** called LocalizeQ with the following specifications:
 
 ---
 

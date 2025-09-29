@@ -1,8 +1,8 @@
-# LocalizeGuy
+# LocalizeQ
 
 ## Overview
 
-LocalizeGuy is a monolithic single-page React application designed for generating AI-powered translations. Users can input text with context, leverage Google's Gemini AI API to generate translations for multiple cultures/locales, and manage their supported cultures list. The application focuses on providing a modern, professional UI/UX for localization workflows with YAML output format.
+LocalizeQ is a monolithic single-page React application designed for generating AI-powered translations. Users can input text with context, leverage Google's Gemini AI API to generate translations for multiple cultures/locales, and manage their supported cultures list. The application focuses on providing a modern, professional UI/UX for localization workflows with YAML output format.
 
 ## User Preferences
 
