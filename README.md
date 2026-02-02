@@ -1,3 +1,37 @@
+🌍 LocalizeQ – AI-Powered Localization Workflow
+
+Reduce localization costs. Ship globally, faster.
+
+LocalizeQ is an AI-first localization experiment that modernizes how global teams translate product strings. It helps engineering and product teams cut localization costs and turnaround time while keeping human vendors in the loop for final verification.
+
+🚨 The Problem Companies Face
+
+Localization quietly consumes time, money, and engineering velocity at most global companies.
+
+From real-world experience and industry observation:
+
+~75% of teams still manage translations using YAML / JSON files
+
+Vendors charge $3–$5 per string
+
+2–3 weeks wait time for translated files
+
+Product launches are delayed across regions
+
+Teams repeatedly pay for similar translations
+
+This slows feature releases, increases costs, and creates friction between product, engineering, and localization teams.
+
+💡 The Idea: AI-First, Vendor-Verified Localization
+
+LocalizeQ flips the traditional localization workflow.
+
+Instead of vendors doing 100% of the translation work:
+
+AI generates translations instantly → Vendors only verify accuracy
+
+This keeps quality high while dramatically reducing cost and time.
+
 🚀 What LocalizeQ Does
 
 LocalizeQ allows teams to translate localization strings instantly using AI.
@@ -17,6 +51,9 @@ Copy or download the translated file
 Share AI output with vendors for verification only, not full translation
 
 Note: The demo is free-hosted. First load may take 10–15 seconds due to cold start.
+
+Live Demo:
+https://lnkd.in/dRqXkFFs
 
 🧠 How It Fits Into a Real Workflow
 
